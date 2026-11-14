@@ -1,31 +1,30 @@
 # 🔐 AI-Powered Escape Room
 
-An interactive AI-powered escape room developed using **Python, Streamlit and Google's Gemini API**.
+An interactive AI-powered escape room built using **Python, Streamlit and Google's Gemini API**.
 
-This project explores how AI can create an engaging gaming experience while Python ensures reliable game rules, structured state management and action validation.
+This project demonstrates how AI can create an engaging gaming experience while Python manages game rules, player actions and validation.
 
 ## 🎮 Project Overview
 
-The project contains two versions:
+The project includes two versions.
 
 ### Version 1 – Basic AI Escape Room
 - Interactive Streamlit web application.
 - Gemini acts as the AI Game Master.
 - Three riddles with natural language interaction.
 - AI-generated storytelling, clues and responses.
-- Basic puzzle progression.
 
 ### Version 2 – Structured AI Escape Room
 - Python-based game engine.
-- Structured inventory and game-state management.
-- Action validation before changing game progress.
+- Inventory and game-state management.
+- Validation of player actions before changing game progress.
 - Key-based drawer access.
 - Four-digit exit code validation.
 - Gemini handles storytelling while Python controls game decisions.
 
 ## 🖥️ Application Screenshots
 
-### Version 1 – AI Escape Room
+### Version 1 – Welcome Screen
 
 ![Version 1 Welcome](screenshots/version1_welcome.png)
 
@@ -50,7 +49,7 @@ The project contains two versions:
 - python-dotenv
 - Git and GitHub
 
-## 🏗️ Project Structure
+## 📁 Project Structure
 
 ```text
 ai-powered-escape-room/
@@ -67,8 +66,8 @@ ai-powered-escape-room/
 │
 ├── docs/
 │   ├── architecture.md
-│   ├── test_cases.md
-│   └── project_report.md
+│   ├── project_report.md
+│   └── test_cases.md
 │
 ├── screenshots/
 │
@@ -102,7 +101,7 @@ pip install -r requirements.txt
 
 ### 4. Configure the Gemini API key
 
-Create your `.env` file using the example:
+Create your local `.env` file:
 
 ```bash
 cp .env.example .env
@@ -114,7 +113,7 @@ Open `.env` and add your Gemini API key:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-**Important:** Never upload your actual API key or `.env` file to GitHub.
+**Security:** Never upload your actual API key or `.env` file to GitHub.
 
 ### 5. Run Version 1
 
@@ -141,7 +140,7 @@ The project was tested with:
 - Attempts to skip puzzles.
 - Attempts to unlock the exit without completing the required steps.
 
-Detailed test results are available in [`docs/test_cases.md`](docs/test_cases.md).
+See [Test Cases and Results](docs/test_cases.md) for the detailed comparison.
 
 ## 📚 Project Documentation
 
@@ -151,7 +150,7 @@ Detailed test results are available in [`docs/test_cases.md`](docs/test_cases.md
 
 ## 💡 Key Learning Outcome
 
-The main learning outcome of this project is understanding the importance of separating AI-generated storytelling from application logic.
+The main learning outcome is understanding the importance of separating AI-generated storytelling from application logic.
 
 Version 1 demonstrates an AI-driven gaming experience, while Version 2 improves reliability through Python-based state management and action validation.
 
